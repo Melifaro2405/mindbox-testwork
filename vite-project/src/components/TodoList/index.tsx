@@ -41,7 +41,6 @@ function TodoList({ todos, setTodos, filterType }: TTodoListProps) {
   };
 
   const handleRemoveTask = (id: string) => {
-    console.log("id>>", id);
     const updatedTodos = todos.filter((todo) => todo.id !== id);
 
     setTodos(updatedTodos);
@@ -97,9 +96,8 @@ function TodoList({ todos, setTodos, filterType }: TTodoListProps) {
           <li
             key={id}
             className={styles.listItem}
-            onClick={() => handleCheckedTask(id)}
           >
-            <button className={styles.svgIcon}>
+            <button className={styles.svgIcon} onClick={() => handleCheckedTask(id)}>
               {checked ? (
                 <CheckedSvg fill="gold" />
               ) : (
