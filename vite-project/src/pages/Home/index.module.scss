@@ -25,7 +25,20 @@ button {
   }
 }
 
+.aboutApp {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  font-size: 30px;
+  margin: 0;
+  cursor: pointer;
+  color: #96fa96;
+  text-decoration: none;
 
+  &:hover {
+    opacity: 0.7;
+  }
+}
 
 
 

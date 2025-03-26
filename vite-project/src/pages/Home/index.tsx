@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router";
 import AddTask from "../../components/AddTask";
 import TodoList from "../../components/TodoList";
 import FiltersList from "../../components/FiltersList";
@@ -11,6 +12,9 @@ function Home() {
 
   return (
     <section>
+      <Link to="about" className={styles.aboutApp}>
+        {"--->"} About App {"<---"}
+      </Link>
       <h1 className={styles.title}>TODOS</h1>
       <AddTask todos={todos} setTodos={setTodos} />
       <TodoList todos={todos} setTodos={setTodos} filterType={filterType} />
