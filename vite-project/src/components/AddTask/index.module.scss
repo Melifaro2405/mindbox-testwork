@@ -1,0 +1,15 @@
+.addTask {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.inputTodoText {
+  font-size: 50px;
+  color: #bda877;
+  background: transparent;
+  border: 1px solid rgba(206, 206, 206, 0.1);
+  border-radius: 12px;
+  padding: 12px;
+  flex: 1;
+}
