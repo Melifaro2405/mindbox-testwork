@@ -1,8 +1,12 @@
 import { ChangeEvent, KeyboardEvent, useEffect, useState } from "react";
 import classNames from "classnames";
 import { TFilterType, TTodo } from "../../types/types.ts";
-import CheckedSvg from "../../assets/checked.svg?react";
-import UnCheckedSvg from "../../assets/unchecked.svg?react";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
+import CheckedSvg from "../../icons/checked.svg?react";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
+import UnCheckedSvg from "../../icons/unchecked.svg?react";
 import styles from "./index.module.scss";
 
 type TTodoListProps = {
