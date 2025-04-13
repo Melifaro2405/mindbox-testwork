@@ -1,13 +1,9 @@
 import { ChangeEvent, KeyboardEvent, useEffect, useState } from "react";
 import classNames from "classnames";
 import { TFilterType, TTodo } from "../../types/types.ts";
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
-import CheckedSvg from "../../icons/checked.svg?react";
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
-import UnCheckedSvg from "../../icons/unchecked.svg?react";
 import styles from "./index.module.scss";
+import CheckedSVG from "../../SVGComponents/CheckedSVG.tsx";
+import UncheckedSVG from "../../SVGComponents/UncheckedSVG.tsx";
 
 type TTodoListProps = {
   todos: TTodo[];
@@ -99,9 +95,9 @@ function TodoList({ todos, setTodos, filterType }: TTodoListProps) {
           >
             <button className={styles.svgIcon} onClick={() => handleCheckedTask(id)}>
               {checked ? (
-                <CheckedSvg fill="gold" />
+                <CheckedSVG />
               ) : (
-                <UnCheckedSvg fill="gold" />
+                <UncheckedSVG />
               )}
             </button>
             {editable ? (
